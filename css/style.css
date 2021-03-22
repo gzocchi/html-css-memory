@@ -9,6 +9,7 @@
 }
 body {
   background-color: #add8e6;
+  font-family: 'Nerko One', cursive;
 }
 
 .clearfix::after {
@@ -33,7 +34,8 @@ div.card:hover > .front {
 
 /* ----- header ----- */
 h1 {
-  font-size: 60px;
+  font-size: 70px;
+  margin: 10px;
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -49,9 +51,6 @@ main {
   transform: translate(-50%, 0);
   display: inline-block;
 }
-/* .row {
-  background-color: darkgray;
-} */
 
 .card {
   position: relative;
@@ -69,7 +68,6 @@ main {
 }
 .front > h2 {
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
 }
 .back {
@@ -100,7 +98,6 @@ main {
 /* ----- footer ----- */
 footer > p {
   margin-bottom: 20px;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 16px;
   text-align: center;
 }

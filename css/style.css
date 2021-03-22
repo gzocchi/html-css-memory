@@ -1,20 +1,4 @@
 /* ----- debug ----- */
-.front > img {
-  display: block;
-  height: 140px;
-  margin: 20px auto 0;
-}
-.front > h2 {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  color: #e61986;
-}
-.back {
-    background-size: 170px;
-    background-position: left;
-    background-image: url(../img/pattern.png);
-}
 /* ---- /debug ----- */
 
 /* ----- common ----- */
@@ -39,12 +23,9 @@ body {
   height: 100%;
   width: 100%;
 }
-.front {
-  background-color: chartreuse;
-}
-
 div.card:hover > .front {
   z-index: 1;
+  background-color: white;
 }
 .always-front {
   z-index: 1;
@@ -59,26 +40,43 @@ h1 {
 }
 
 /* ----- main ----- */
+main {
+  margin: 10px 0;
+}
 .container {
-  width: 55%;
-  margin: 20px auto;
-  padding: 5px;
-  background-color: tomato;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: inline-block;
 }
-.row {
-  margin-top: 5px;
-  padding: 5px;
+/* .row {
   background-color: darkgray;
-}
+} */
 
 .card {
   position: relative;
   float: left;
   height: 210px;
   width: 180px;
-  margin: 5px;
+  margin: 10px;
   overflow: hidden;
   border-radius: 15px;
+}
+.front > img {
+  display: block;
+  height: 140px;
+  margin: 20px auto 0;
+}
+.front > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #e61986;
+}
+.back {
+  background-size: 170px;
+  background-position: left;
+  background-image: url(../img/pattern.png);
 }
 
 /* ----- footer ----- */

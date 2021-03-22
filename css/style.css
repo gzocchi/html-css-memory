@@ -1,26 +1,36 @@
 /* ----- debug ----- */
 .container {
-  height: 600px;
-  width: 600px;
+  /* height: 600px; */
+  /* width: 600px; */
+  padding: 5px;
   background-color: tomato;
 }
-.front {
+.row {
+  /* height: 200px; */
+  /* width: 600px; */
+  margin-top: 5px;
+  padding: 5px;
+  background-color: darkgray;
+}
+
+.front,
+.back {
   position: absolute;
-  z-index: 1;
   height: 100%;
   width: 100%;
+}
+.front {
   background-color: chartreuse;
 }
 .back {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
   background-color: crimson;
 }
 
 div.card:hover > .front {
-  z-index: 2;
+  z-index: 1;
+}
+.always-front {
+  z-index: 1;
 }
 /* ---- /debug ----- */
 
@@ -34,6 +44,12 @@ body {
   background-color: #add8e6;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ----- header ----- */
 h1 {
   font-size: 60px;
@@ -44,19 +60,22 @@ h1 {
 
 /* ----- main ----- */
 .container {
+  width: 55%;
   margin: 20px auto;
 }
 .card {
   position: relative;
+  float: left;
   height: 210px;
   width: 180px;
+  margin: 5px;
   overflow: hidden;
   border-radius: 15px;
-  background-color: black;
 }
 
 /* ----- footer ----- */
 footer > p {
+    margin-bottom: 20px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;

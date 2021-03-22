@@ -1,36 +1,19 @@
 /* ----- debug ----- */
-.container {
-  /* height: 600px; */
-  /* width: 600px; */
-  padding: 5px;
-  background-color: tomato;
+.front > img {
+  display: block;
+  height: 140px;
+  margin: 20px auto 0;
 }
-.row {
-  /* height: 200px; */
-  /* width: 600px; */
-  margin-top: 5px;
-  padding: 5px;
-  background-color: darkgray;
-}
-
-.front,
-.back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.front {
-  background-color: chartreuse;
+.front > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #e61986;
 }
 .back {
-  background-color: crimson;
-}
-
-div.card:hover > .front {
-  z-index: 1;
-}
-.always-front {
-  z-index: 1;
+    background-size: 170px;
+    background-position: left;
+    background-image: url(../img/pattern.png);
 }
 /* ---- /debug ----- */
 
@@ -50,6 +33,23 @@ body {
   display: table;
 }
 
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.front {
+  background-color: chartreuse;
+}
+
+div.card:hover > .front {
+  z-index: 1;
+}
+.always-front {
+  z-index: 1;
+}
+
 /* ----- header ----- */
 h1 {
   font-size: 60px;
@@ -62,7 +62,15 @@ h1 {
 .container {
   width: 55%;
   margin: 20px auto;
+  padding: 5px;
+  background-color: tomato;
 }
+.row {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: darkgray;
+}
+
 .card {
   position: relative;
   float: left;
@@ -75,7 +83,7 @@ h1 {
 
 /* ----- footer ----- */
 footer > p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;

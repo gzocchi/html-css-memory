@@ -22,10 +22,10 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 div.card:hover > .front {
   z-index: 1;
-  background-color: white;
 }
 .always-front {
   z-index: 1;
@@ -71,12 +71,30 @@ main {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  color: #e61986;
 }
 .back {
   background-size: 170px;
   background-position: left;
   background-image: url(../img/pattern.png);
+}
+
+.baloon {
+  color: #e61986;
+}
+.tractor {
+  color: #e67919;
+}
+.bicycle {
+  color: #19e680;
+}
+.ship {
+  color: #196be6;
+}
+.submarine {
+  color: #e61923;
+}
+.tram {
+  color: #5a5e5f;
 }
 
 /* ----- footer ----- */

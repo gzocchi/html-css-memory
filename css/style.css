@@ -4,6 +4,24 @@
   width: 600px;
   background-color: tomato;
 }
+.front {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: chartreuse;
+}
+.back {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: crimson;
+}
+
+div.card:hover > .front {
+  z-index: 2;
+}
 /* ---- /debug ----- */
 
 /* ----- common ----- */
@@ -29,10 +47,12 @@ h1 {
   margin: 20px auto;
 }
 .card {
+  position: relative;
   height: 210px;
   width: 180px;
-  background-color: black;
+  overflow: hidden;
   border-radius: 15px;
+  background-color: black;
 }
 
 /* ----- footer ----- */
